@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Theme Webpage</title>
+  <style>
+    /* General Styling */
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      margin-top: 10px;
+    }
+
+    .theme-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 20px;
+    }
+
+    .theme {
+      width: 30%;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .theme:hover {
+      transform: scale(1.05);
+    }
+
+    /* Light Theme */
+    .light {
+      background-color: #ffffff;
+      color: #333333;
+    }
+
+    .light h2 {
+      color: #007acc;
+    }
+
+    /* Dark Theme */
+    .dark {
+      background-color: #1e1e1e;
+      color: #e0e0e0;
+    }
+
+    .dark h2 {
+      color: #ff9900;
+    }
+
+    /* Nature Theme */
+    .nature {
+      background-color: #d9f2d9;
+      color: #2f4f2f;
+    }
+
+    .nature h2 {
+      color: #228b22;
+    }
+
+    /* Responsive */
+    @media (max-width: 800px) {
+      .theme {
+        width: 80%;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Color Theme Showcase</h1>
+  <div class="theme-container">
+    
+    <div class="theme light">
+      <h2>Light Theme</h2>
+      <p>This theme uses a bright background with dark text for clear visibility.</p>
+    </div>
+
+    <div class="theme dark">
+      <h2>Dark Theme</h2>
+      <p>This theme uses a dark background with light text for a modern look.</p>
+    </div>
+
+    <div class="theme nature">
+      <h2>Nature Theme</h2>
+      <p>This theme uses green tones inspired by nature for a calm and fresh feel.</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
