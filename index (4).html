@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-container {
+            background-color: #ffdddd;
+            width: 500px;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="file"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        .name-container,
+        .dob-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .name-container input,
+        .dob-container select,
+        .dob-container input {
+            width: 32%;
+        }
+
+        .gender-container,
+        .department-container {
+            margin-top: 10px;
+        }
+
+        .gender-container input,
+        .department-container input {
+            margin-left: 10px;
+        }
+
+        textarea {
+            height: 60px;
+        }
+
+        .register-btn {
+            display: block;
+            margin: 20px auto 0;
+            padding: 8px 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Student Registration Form</h2>
+        <form>
+            <label>Roll no. :</label>
+            <input type="text" name="rollno">
+
+            <label>Student name :</label>
+            <div class="name-container">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+            </div>
+
+            <label>Father's name :</label>
+            <input type="text" name="fathername">
+
+            <label>Date of birth :</label>
+            <div class="dob-container">
+                <input type="text" placeholder="Day">
+                <input type="text" placeholder="Month">
+                <input type="text" placeholder="Year">
+            </div>
+
+            <label>Mobile no. :</label>
+            <div class="name-container">
+                <input type="text" value="+91" disabled>
+                <input type="text">
+            </div>
+
+            <label>Email id :</label>
+            <input type="email" name="email">
+
+            <label>Password :</label>
+            <input type="password" name="password">
+
+            <label>Gender :</label>
+            <div class="gender-container">
+                <input type="radio" name="gender"> Male
+                <input type="radio" name="gender"> Female
+            </div>
+
+            <label>Department :</label>
+            <div class="department-container">
+                <input type="checkbox" name="dept"> CSE
+                <input type="checkbox" name="dept"> IT
+                <input type="checkbox" name="dept"> ECE
+                <input type="checkbox" name="dept"> Civil
+                <input type="checkbox" name="dept"> Mech
+            </div>
+
+            <label>Course :</label>
+            <select>
+                <option>---------------- Select Current Course's ----------------</option>
+            </select>
+
+            <label>Student photo :</label>
+            <input type="file" name="photo">
+
+            <label>City :</label>
+            <input type="text" name="city">
+
+            <label>Address :</label>
+            <textarea></textarea>
+
+            <button type="submit" class="register-btn">Register</button>
+        </form>
+    </div>
+
+</body>
+</html>
