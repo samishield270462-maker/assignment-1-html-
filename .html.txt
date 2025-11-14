@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Restaurant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .cover-image {
+            width: 100%;
+            height: auto;
+        }
+        h1 {
+            margin: 20px 0;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cover Image -->
+    <img src="cover.jpg" alt="Restaurant Cover Image" class="cover-image">
+
+    <!-- Restaurant Name -->
+    <h1>Delicious Bites Restaurant</h1>
+</body>
+</html>
