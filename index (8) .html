@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to My Page</title>
+
+  <style>
+    /* General Page Styling */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    /* Header Section */
+    .main-header {
+      position: relative;
+      background-color: #1877f2;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .main-header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    /* Icons Section */
+    .icons {
+      display: flex;
+      gap: 25px;
+      position: relative;
+    }
+
+    .icon {
+      position: relative;
+    }
+
+    .icon img {
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+    }
+
+    .count {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      background: red;
+      color: white;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 50%;
+    }
+
+    /* Main Content */
+    .content {
+      padding: 20px 40px;
+      line-height: 1.7;
+      max-width: 800px;
+    }
+
+    /* Fixed Chat Icon */
+    .chat-icon {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: white;
+      padding: 10px;
+      border-radius: 50%;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .chat-icon img {
+      width: 40px;
+      height: 40px;
+    }
+
+    /* Hover Effects */
+    .icon img:hover,
+    .chat-icon img:hover {
+      transform: scale(1.1);
+      transition: 0.3s;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .main-header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .icons {
+        margin-top: 10px;
+      }
+
+      .chat-icon {
+        top: unset;
+        bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="main-header">
+    <h1>Welcome to My Page</h1>
+
+    <!-- Icons Section -->
+    <div class="icons">
+      <div class="icon">
+        <span class="count">3</span>
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+      </div>
+
+      <div class="icon">
+        <span class="count">5</span>
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="Whatsapp">
+      </div>
+
+      <div class="icon">
+        <span class="count">10</span>
+        <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="Cart">
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum justo nec urna ullamcorper, ac pretium elit blandit.</p>
+    <p>Morbi fringilla lorem ut justo volutpat, nec gravida odio feugiat. Vivamus nec dui non tortor tincidunt tincidunt.</p>
+    <p>Praesent tristique eros vel lacus faucibus, nec lacinia ligula blandit. Nulla facilisi.</p>
+    <p>Aliquam erat volutpat. Integer et nulla ac turpis faucibus gravida in in mi.</p>
+    <p>Suspendisse sagittis mi at erat dignissim, ac hendrerit urna convallis. Cras pretium mi eu erat ullamcorper viverra.</p>
+    <p>Vestibulum sit amet erat eget mauris tincidunt feugiat vel id ante.</p>
+    <p>Donec consequat diam ac orci tristique, vel laoreet neque egestas.</p>
+    <p>Curabitur rhoncus massa eget sem gravida, ut tristique mi luctus.</p>
+    <p>Fusce et lacus fermentum, facilisis lacus ut, fermentum metus.</p>
+    <p>Etiam malesuada, nulla sed tincidunt facilisis, risus lectus vulputate turpis, id tempor sem neque in lacus.</p>
+    <p>Vivamus sit amet ipsum id lorem gravida congue at ut risus. Duis eget justo nec magna convallis tristique.</p>
+    <p>Nam cursus felis in justo mattis bibendum. Aliquam erat volutpat.</p>
+  </main>
+
+  <!-- Fixed Chat Icon -->
+  <div class="chat-icon">
+    <img src="https://cdn-icons-png.flaticon.com/512/2462/2462719.png" alt="Chat">
+  </div>
+</body>
+</html>
+
